@@ -1,6 +1,6 @@
 
         body {
-            background-color: #252525;
+            background-color: #7e387e;
             color: #c56262;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -13,7 +13,6 @@
             margin-bottom: 40px;
         }
 
-        /* Contenedor de la cartelera */
         .cartelera-container {
             max-width: 1000px;
             margin: 0 auto;
@@ -22,7 +21,6 @@
             gap: 30px;
         }
 
-        /* Diseño de cada tarjeta de película */
         .pelicula-card {
             background-color: #262626;
             border: 1px solid #333333;
@@ -33,16 +31,14 @@
             align-items: center;
         }
 
-        /* Configuración para la inserción de imágenes */
         .pelicula-img {
             width: 150px;
             height: 220px;
             object-fit: cover;
             border-radius: 4px;
-            background-color: #333; /* Fondo gris por si la imagen no carga */
+            background-color: #333; 
         }
 
-        /* Texto de las películas */
         .pelicula-info {
             flex: 1;
         }
@@ -66,7 +62,6 @@
             margin: 0;
         }
 
-        /* Adaptación para pantallas pequeñas */
         @media (max-width: 600px) {
             .pelicula-card {
                 flex-direction: column;
