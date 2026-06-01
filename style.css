@@ -1,0 +1,79 @@
+
+        body {
+            background-color: #252525;
+            color: #c56262;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f10f0f;
+            margin-bottom: 40px;
+        }
+
+        /* Contenedor de la cartelera */
+        .cartelera-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 30px;
+        }
+
+        /* Diseño de cada tarjeta de película */
+        .pelicula-card {
+            background-color: #262626;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Configuración para la inserción de imágenes */
+        .pelicula-img {
+            width: 150px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #333; /* Fondo gris por si la imagen no carga */
+        }
+
+        /* Texto de las películas */
+        .pelicula-info {
+            flex: 1;
+        }
+
+        .pelicula-titulo {
+            color: #630909;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .sinopsis-titulo {
+            font-weight: bold;
+            color: #cccccc;
+            margin-bottom: 5px;
+        }
+
+        .pelicula-sinopsis {
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Adaptación para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .pelicula-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .pelicula-img {
+                width: 180px;
+                height: 260px;
+            }
+        }
